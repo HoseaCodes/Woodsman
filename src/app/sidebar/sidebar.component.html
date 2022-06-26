@@ -1,0 +1,54 @@
+<div>
+  <img
+  width="40"
+  alt="Woodsman Logo"
+  src="https://images.unsplash.com/photo-1633412802994-5c058f151b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
+/>
+<span>Woodsman</span>
+  <div class="spacer"></div>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Live Tails</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Sources</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>View</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Alerts</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Dashboards</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Live Tails</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Sources</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Integrations</p>
+  </a>
+  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+
+    <p>Help & Support</p>
+  </a>
+  <button *ngIf="isDarkMode; else elseBlock" (click)="switchModes()">
+    Dark Mode
+  </button>
+  <ng-template #elseBlock >
+    <button (click)="switchModes()">
+      Light Mode
+    </button>
+  </ng-template>
+
+</div>
