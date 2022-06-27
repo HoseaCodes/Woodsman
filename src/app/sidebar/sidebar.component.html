@@ -1,54 +1,92 @@
-<div>
-  <img
-  width="40"
-  alt="Woodsman Logo"
-  src="https://images.unsplash.com/photo-1633412802994-5c058f151b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
-/>
-<span>Woodsman</span>
+<mat-drawer class="sidebar" mode="side" opened>
+  <div class="sidebar-logo">
+    <img
+    width="80"
+    alt="Woodsman Logo"
+    src="../assets/woodsman.jpeg"
+    />
+    <h1>Woodsman</h1>
+    <div class="spacer"></div>
+  </div>
   <div class="spacer"></div>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
+  <mat-selection-list [multiple]="false">
+    <!-- <mat-list-option *ngFor="let link of availableLinks" [value]="link"> -->
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="terminal icon">terminal</mat-icon>
+        <a aria-label="Live Tails" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="Live_Tails">
+          &nbsp;&nbsp; Live Tails
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="token icon">token</mat-icon>
+        <a aria-label="Sources" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="Sources">
+        &nbsp;&nbsp; Sources
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="visibility icon">visibility</mat-icon>
+        <a aria-label="View" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="view">
+        &nbsp;&nbsp; View
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="error icon">error</mat-icon>
+        <a aria-label="Alerts" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="Alerts">
+        &nbsp;&nbsp; Alerts
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <a aria-label="Dashboards" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="Dashboards">
+        &nbsp;&nbsp; Dashboards
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="webhook icon">webhook</mat-icon>
+        <a aria-label="Integrations" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="Integrations">
+        &nbsp;&nbsp; Integrations
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="question_mark icon">question_mark</mat-icon>
+        <a aria-label="Help&Support" target="_blank" class="sidebar-links"
+        rel="noopener" href="" title="Help&Support">
+        &nbsp;&nbsp; Help & Support
+        </a>
+      </mat-list-item>
+    </mat-list-option>
+  </mat-selection-list>
+  <div class="spacer"></div>
+  <mat-selection-list class="sidebar-mode-switch" [multiple]="false">
+    <!-- <mat-list-option *ngFor="let link of availableLinks" [value]="link"> -->
+    <mat-list-option class="sidebar-list-option">
+      <mat-list-item class="sidebar-switch-button" *ngIf="isDarkMode; else elseBlock" (click)="switchModes()">
+          &nbsp;&nbsp;  Dark Mode
+      </mat-list-item>
+      <ng-template #elseBlock >
+        <mat-list-item class="sidebar-switch-button" (click)="switchModes()">
+          &nbsp;&nbsp;  Light Mode
+        </mat-list-item>
+      </ng-template>
+    </mat-list-option>
+  </mat-selection-list>
+</mat-drawer>
 
-    <p>Live Tails</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Sources</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>View</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Alerts</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Dashboards</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Live Tails</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Sources</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Integrations</p>
-  </a>
-  <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-
-    <p>Help & Support</p>
-  </a>
-  <button *ngIf="isDarkMode; else elseBlock" (click)="switchModes()">
-    Dark Mode
-  </button>
-  <ng-template #elseBlock >
-    <button (click)="switchModes()">
-      Light Mode
-    </button>
-  </ng-template>
-
-</div>

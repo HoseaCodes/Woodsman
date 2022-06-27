@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DataComponent implements OnInit {
 
   public logs = [];
+  public title = "Woodsman";
 
   constructor() { }
 

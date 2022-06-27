@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer-inner-container {
+  width: 20rem !important;
+}
+.mat-drawer-container {
+  position: inherit !important;
+  height: inherit;
+}
+.mat-drawer-content {
+  overflow: hidden !important;
+  /* position:fixed; */
+  position:inherit !important;
+  display: grid !important;
+  grid-template-columns: .25fr 1fr;
+  height: inherit !important;
+}
+/* .mat-drawer-container .mat-drawer-content {
+  display: flex;
+  position: relative;
+} */
+.mat-list-option {
+  padding-top: 8% !important;
+}
+.mat-drawer-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mat-list-text {
+  font-size: 1.3rem;
+  color: dimgrey;
+}

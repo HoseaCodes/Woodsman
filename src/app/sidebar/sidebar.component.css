@@ -1,0 +1,22 @@
+.sidebar-links {
+ text-decoration: none;
+ color: dimgrey;
+ font-size: 1.3rem;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+
+.sidebar-mode-switch {
+  padding-bottom: 5%;
+}
+
+.sidebar-switch-button {
+  color: dimgrey;
+  font-size: 1.3rem;
+}

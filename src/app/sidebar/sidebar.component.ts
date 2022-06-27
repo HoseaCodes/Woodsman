@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   public isDarkMode = true;
+  public showFiller = true;
+  availableLinks: string[] = ['Live Tails', 'Sources', 'View', 'Alerts', 'Dashboards', 'Integrations', 'Help & Support'];
+
   constructor() { }
 
   ngOnInit(): void {
