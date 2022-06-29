@@ -33,7 +33,19 @@
 
   </div>
   code
-  <code>
+  <!-- <code class="logs">
     {{logs}}
-  </code>
+  </code> -->
+  <table>
+    <!-- <thead>
+        <th>Name</th>
+        <th>Index</th>
+    </thead> -->
+    <tbody>
+        <tr *ngFor="let log of logs">
+            <td>{{log}}</td>
+        </tr>
+    </tbody>
+</table>
+
 </div>
